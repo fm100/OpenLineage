@@ -1,0 +1,8 @@
+validation_operator_name: action_list_operator
+batches:
+  - batch_kwargs:
+      path: /opt/data/great_expectations/data
+      datasource: file__data
+      data_asset_name: dataset.csv
+    expectation_suite_names:
+      - pandas.suite

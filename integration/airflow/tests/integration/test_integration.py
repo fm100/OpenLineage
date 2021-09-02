@@ -154,6 +154,7 @@ def test_integration_bigquery():
 
 
 if __name__ == '__main__':
-    test_integration_postgres()
-    test_integration_bigquery()
+    wait_for_dag("great_expectations_validation")
+    # test_integration_postgres()
+    # test_integration_bigquery()
 
